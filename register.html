@@ -71,7 +71,7 @@
 
 
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email addres" required autofocus>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                 <label for="inputEmail">Email address</label>
               </div>
 
@@ -86,10 +86,16 @@
 
               </div>
               <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <input type="checkbox" class="custom-control-input" name="Policies" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">I have agreed to the terms and policies.</label>
               </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" onclick="resetForm()" type="submit">Reset</button>
+              <!--
+              <button class="add-new-reset" onclick="resetForm()"> Reset</button>
+-->
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+
               <hr class="my-4">
               <!--
               <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
@@ -116,6 +122,10 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- customjs -->
+  <script src="registration.js"></script>
+
 
 </body>
 
